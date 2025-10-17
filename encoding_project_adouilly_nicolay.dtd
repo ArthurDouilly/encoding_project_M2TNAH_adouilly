@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- For this DTD I have used the official TEI Guidelines as they are currently available, specifically TEI Lite. Some of the attributes are experiments to encode the basic structure of a testament -->
+
+<!-- The elements listed below are used to describe metadata and are consequently part of the teiHeader. -->
+
+<!ELEMENT TEI (teiHeader, text)>
+<!ELEMENT teiHeader (fileDesc, encodingDesc, profileDesc, revisionDesc)>
+<!ELEMENT fileDesc (titleStmt, respStmt?, sourceDesc)>
+<!ELEMENT titleStmt (title, author)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT respStmt (resp, name)>
+<!ELEMENT resp (#PCDATA)>
+<!ELEMENT sourceDesc (bibl)>
+<!ELEMENT bibl (title, author?, date?, url?)>
+<!ATTLIST bibl type (archive | monography) #REQUIRED>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT encodingDesc (projectDesc, samplingDecl?, editorialDecl?)>
+<!ELEMENT projectDesc (#PCDATA)>
+<!ELEMENT samplingDecl (#PCDATA)>
+<!ELEMENT editorialDecl (#PCDATA)>
+<!ELEMENT profileDesc (langUsage)>
+<!ELEMENT langUsage (language)>
+<!ELEMENT language EMPTY>
+<!ATTLIST language ident (fr) #REQUIRED>
+<!ELEMENT revisionDesc (change+)>
+<!ELEMENT change (#PCDATA)>
+<!ATTLIST change when CDATA #REQUIRED>
+
+<!-- The elements listed below are used for encoding the body of the document. I have chosen not to include front or back matter since the documents 
+are archives rather than books, but added the 'salute' and 'signed' elements as a result of the structure of a testament, which include a traditional 
+invocation as well as a closer explaining the material conditions and the context of writing of the testament -->
+
+<!ELEMENT text (body)>
+<!ELEMENT body (head*, salute*, div*, signed*)>
+<!ELEMENT head (note*, p*)>
+<!ELEMENT salute (p*)>
+<!ELEMENT div (p+)>
+<!ATTLIST div type CDATA #REQUIRED>
+<!ELEMENT p (#PCDATA | name | objectName | date | note)*> <!-- After struggling to find a way to integrate both text and elements within the 'p' element, I have found the way to make a 'mixed content' element via internet search at : https://stackoverflow.com/questions/19892383/xml-dtds-defining-elements-which-contain-text-and-sub-elements -->
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name type (person | organization | place | religious_figure) #IMPLIED>
+<!ATTLIST persName ref CDATA #IMPLIED>
+<!ELEMENT objectName (#PCDATA)> <!-- For now, I have chosen objectName to represent the 'items' of the testament, what is being given and demanded. -->
+<!ATTLIST objectName type (transaction | service | donation | demand) #REQUIRED> <!-- The choice has been made to restrict here to try and give the possibility to isolate the demands and the donations, as well as the 'transactions' with religious institutions, in exchange for services. -->
+<!ELEMENT date (#PCDATA)>
+<!ATTLIST date when CDATA #REQUIRED>
+<!ATTLIST date type CDATA #IMPLIED>
+<!ELEMENT note EMPTY>
+<!ATTLIST note type CDATA #REQUIRED>
+<!ELEMENT signed (#PCDATA)>

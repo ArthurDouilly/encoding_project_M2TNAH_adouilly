@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "encoding_project_adouilly_nicolay.dtd">
+
+<TEI>
+    
+<!-- Below is the teiHeader, which contains the metadata on the transcript -->  
+    
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Testament de Marie-Elisabeth Nicolay; encoded from the transcript realized in 1873 by Arthur de Boislisle</title>
+                <author>Marie-Elisabeth Nicolay</author>
+            </titleStmt>
+            <respStmt>
+                <resp>encoded by</resp>
+                <name>Arthur Douilly</name>
+            </respStmt>
+            <sourceDesc>
+                <bibl type="monography">
+                    <title>Histoire de la maison de Nicolay, T.1, pièce 479, p.502-504, 
+                        as scanned and made available through Gallica</title>
+                    <author>Arthur de Boislisle</author>
+                    <date when="1873-1875">1873-1875</date>
+                    <url>https://gallica.bnf.fr/ark:/12148/bpt6k8517958</url>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>This file has been encoded as part of an assignment for the TEI-XML class in the 2nd year of the TNAH MD at Ecole des Chartes, in France. It is one of three files which will be encoded in this manner, all of which are testaments which I have sampled from my research project on the Nicolay family of robe nobility in Paris in the 18th-19th centuries that I have realized at Paris-Nanterre university in 2018-2019.</projectDesc>
+            <samplingDecl>Due to the limit of characters imposed by this exercise in encoding, I have limited myself only to the first part of each testament. As such, the samples mostly contain the will and the declaration of the authors, and especially, where present, the invocation to religious figures.</samplingDecl>
+            <editorialDecl>This testament has been transcribed and editorialized by french archivist Arthur de Boislisle in 1873, as part of a history of the Nicolay family that he realized for said family. Parts of this document have been cut short and summarized as part of this editorial process. I have seen fit to note such parts in an effort to underline the specific state of this testament.</editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="fr"/>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2025-10-16">Encoded first version of the text as an example of the DTD.</change>
+        </revisionDesc>
+    </teiHeader>
+    
+<!-- Below is the text, which contains the encoded transcript -->
+    
+    <text>
+        <body>
+            <head>
+                <note type = "editorialization by A. Boislisle"/>
+                <p>
+                    <date when="1708-01-02">2 janvier 1708</date>,<date when="1708-02-14/18">14 et 18 février 1708</date>
+                </p>
+                <p>
+                    Testament de Marie-Elisabeth Nicolay
+                </p>
+            </head>
+            <salute>
+                <p>
+                    Au nom de la très sainte <name type="religious_figure">Trinité, le Père, le Fils et le Saint Esprit.</name>
+                </p>
+            </salute>
+            <div type="invocation">
+                <p>
+                    Je donne mon âme et mon coeur à <name type="religious_figure">Dieu</name>. J’abandonne volontiers les biens de ce monde, qui ne sont que vanitez, et dont je ne me suis que trop servy à cet usage. Je m’en repens avec beaucoup de doulleurs, comm’ aussy de tous les péchez que j’ay commis pendant cette misérable vie. Je croy un seul <name type="religious_figure">Dieu, mon créateur et mon rédempteur</name>, et tout ce que <name type="organization">l’Eglise catholique, apostolique et romaine</name> croy. Je recommande mon âme aux intercessions de la glorieuse <name type="religious_figure">vierge Marie</name> et de <name type="religious_figure">sainte Elizabeth</name>, mes patronnes, et à celles de mon <name type="religious_figure">ange gardien</name>, de <name type="religious_figure">saint Joseph</name> et de tous <name type="religious_figure">les saints et saintes</name> qui jouissent du bonheur que j’espère par leur assistance, que je les prie dès à présent de ne me pas refuser à l’heure de ma mort. Je dis avec un profond respect les noms de <name type="religious_figure">Jésus</name> et de <name type="religious_figure">Marie</name>, que je souhaite pouvoir prononcer avec connoissance au dernier moment de ma vie.
+                </p>
+            </div>
+            <div type="declaration_of_intent">
+                <p>
+                    Cecy est mon testament, que je veux et ordonne qui soit exécutté dans toutte sa teneur comme il s’ensuit :
+                </p>
+            </div>
+            <div type="burial_specifications">
+                <p>
+                    Premièrement, <objectName type="demand">je veux être enterrée auprès du corps de mon très cher et très honoré père</objectName>, dans la <name type="place">cave de Goussainville</name>, et <objectName type="demand">que l’on fasse dire dans l’église de ce lieu un service annuel pour le repos de mon âme</objectName>. Je laisse pour cela trois cens livres. <objectName type="demand">Je veux que l’on me fasse un service sans aucune tenture ny cérémonies</objectName>, dans la paroisse sur laquelle je mourray, soit <name type="place">à Paris ou à la campagne</name>. <objectName type="demand">Je veux que cent pauvres y assistent, moitié filles et moitié garçons : on donnera à chacun de ses pauvres enfans trois livres, et on leur dira de prier Dieu pour moy</objectName>.
+                </p>
+            </div>
+            <div type="religious_demands">
+                <p>
+                    <note type="editorialization by A. Boislisle"/> <!-- This part is a summary and thus not written as is in the original document. -->
+                    [Legs : <objectName type="transaction">250 l.</objectName> aux <name type="organization">Hospitalières</name> de la <name type="place">place Royale</name>, pour dire <objectName type="service">250 messes</objectName>, et autant à l’<name type="organization">Ave-Maria</name> ; <objectName type="transaction">500 l.</objectName> à <name type="organization">l’église</name> de <name type="place">Goussainville</name> pour <objectName type="service">célébrer à perpétuité, le 20 février, l’anniversaire de la mort du père de la testatrice</objectName> ; <objectName type="donation">500 l. aux pauvres malades</objectName> de <name type="place">Goussainville</name>, <objectName type="donation">300 l. à ceux</objectName> d’<name type="place">Ivors</name>, et autant à ceux de <name type="place">Villaines</name> et <name type="place">Mignaux</name> ; aux <name type="organization">dames de Sainte-Marie</name> de la <name type="place">rue Saint-Jacques</name>, <objectName type="donation">tous les meubles de l’appartement qu’elle occupe dans leur maison</objectName>; <objectName type="donation">1,000 l.</objectName> à l’<name type="organization">Hôtel-Dieu</name>, autant à l’<name type="organization">Hôpital-Général</name> ; <objectName type="donation">500 l. pour délivrer quelques prisonniers pour dettes</objectName> ; <objectName type="donation">1,500 l.</objectName> aux <name type="organization">Hospitalières</name> de la <name type="place">place Royale</name> ; <objectName type="donation">200 l.</objectName> aux <name type="organization">Anglaises</name> du <name type="place">faubourg Saint-Antoine</name> ; <objectName type="donation">1,000 l. aux pauvres</objectName> de <name type="organization">sa paroisse</name>, autant à la <name type="organization">Marmite des malades</name>, et <objectName type="donation">200 l. pour les pauvres veuves et filles</objectName> de la <name type="place">rue de Reuilly</name> dont elle prend soin depuis longtemps.]
+                </p>
+            </div>
+        </body>
+    </text>
+ 
+</TEI>
